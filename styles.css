@@ -88,6 +88,22 @@ nav {
   
 }
 
+nav input[type='checkbox'], nav label {
+  display: none;
+}
+
+input[type='checkbox']:not(:checked)+ul {
+  display: none;
+}
+
+nav label {
+  text-align: right;
+  display: block;
+  padding: 0.5em;
+  line-height: 1.6em;
+  align-self: center;
+}
+
 nav .logo h1 {
   color: #ecf0f1;
   font-family: "Roboto", sans-serif;
@@ -387,6 +403,30 @@ footer {
 }
 
 @media (max-width: 480px) {
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+}
+/* Because we are in mobile mode, we want to display it as a
+   vertical list */
+nav ul {
+    display: block;
+}
+/* We have two lists: the first one are the always visibile items
+   in the menu bar. The second one is the one that will be hidden */
+nav ul:last-child {
+    width: 100%;
+    flex-basis: 100%;
+}
+nav ul li {
+    margin-bottom: 0;
+    width: 100%;
+    text-align: right;
+    padding: 0.5em;
+}
+
   .hero-content h2 {
     font-size: 28px;
   }
