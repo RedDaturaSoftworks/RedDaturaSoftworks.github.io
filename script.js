@@ -3,18 +3,27 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentSectionIndex = 0;
     console.log(sections);
     document.addEventListener('wheel', (e) => {
-        
         if (e.deltaY > 0) {
             // Scroll down
             if (currentSectionIndex < sections.length - 1) {
                 currentSectionIndex++;
-                sections[currentSectionIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+                sections[currentSectionIndex].scrollIntoView(
+                    { 
+                        behavior: 'smooth', 
+                        block: 'start' 
+                    }
+                );
             }
         } else {
             // Scroll up
             if (currentSectionIndex > 0) {
                 currentSectionIndex--;
-                sections[currentSectionIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+                sections[currentSectionIndex].scrollIntoView(
+                    { 
+                        behavior: 'smooth',
+                        block: 'start' 
+                    }
+                );
             }
         }
     });
