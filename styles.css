@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   scroll-behavior: smooth;
 }
@@ -85,17 +85,23 @@ nav {
   padding: 15px 20px;
   background-color: #0D0D0D;
   flex-wrap: wrap;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  
 }
 
 nav .logo h1 {
   color: #ecf0f1;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 25px;
 }
 
 nav .logo span {
   color: #971010;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 25px;
 }
 
 nav ul {
@@ -277,10 +283,21 @@ footer {
   margin-bottom: 20px;
 }
 
+.footer-about h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 25px;
+}
+
 .footer-about h2 span,
 .footer-links h3,
 .footer-contact h3 {
   color: #971010;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 25px;
 }
 
 .footer-links ul {

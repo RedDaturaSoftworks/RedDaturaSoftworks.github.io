@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('section');
     let currentSectionIndex = 0;
     console.log(sections);
-    document.addEventListener('wheel', (e) => {
+    /*document.addEventListener('wheel', (e) => {
         if (e.deltaY > 0) {
             // Scroll down
             if (currentSectionIndex < sections.length - 1) {
@@ -26,5 +26,5 @@ document.addEventListener('DOMContentLoaded', function() {
                 );
             }
         }
-    });
+    });*/
 });
